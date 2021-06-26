@@ -42,3 +42,23 @@ Let's see if I can connect to it from Node now.
 Interesting! So there's `pg`, which is PostgreSQL to spec, it looks like, and then there's `pg-promise` with added goodness, using `pg` under the hood, and there's also `node-postgres` ... je ne s'ais pas. Wait, no, `pg-promise` is build on `node-postgres` ...
 
 Okay, well, thanks [vitaly-t for this SO post!](https://stackoverflow.com/a/36123432)
+
+## Security
+
+### Changing the Default Password
+
+`sudo passwd postgres` is what we're looking for! ... Uhh ... Ah, okay. Then `su postgres` and put in that password, then `psql` as the postgres user and `\password postgres`, and that's the postgres admin password.
+
+## Creating the First DB!
+
+`psql` as postgres, and then `CREATE TABLE testdb;`!
+
+## Creating the First User!
+
+`psql testdb` as postgres, and then `CREATE USER testuser;`, and then `GRANT ALL PRIVILEGES ON DATABASE testdb TO testuser;`!
+
+## Connecting!
+
+This seemed to work:
+
+`postgresql://${process.env.PGADMIN}:${process.env.PGADMINPASSWORD}@localhost/${process.env.DATABASE}?user=${process.env.DBUSER}&password=${process.env.DBUSERPASSWORD}`
