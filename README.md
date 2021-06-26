@@ -36,3 +36,9 @@ Well, shoot. Everything ran, I've got a `psql` version, and running `pg_lscluste
 ## Node
 
 Let's see if I can connect to it from Node now.
+
+### Packages
+
+Interesting! So there's `pg`, which is PostgreSQL to spec, it looks like, and then there's `pg-promise` with added goodness, using `pg` under the hood, and there's also `node-postgres` ... je ne s'ais pas. Wait, no, `pg-promise` is build on `node-postgres` ...
+
+Okay, well, thanks [vitaly-t for this SO post!](https://stackoverflow.com/a/36123432)

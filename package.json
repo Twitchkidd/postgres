@@ -1,0 +1,12 @@
+{
+  "name": "postgres",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Twitchkidd/postgres.git",
+  "author": "Gareth Field <field.gareth@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "pg-promise": "^10.10.2"
+  }
+}
