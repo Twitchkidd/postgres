@@ -66,3 +66,5 @@ This seemed to work:
 ## Further Study!
 
 Start [here!](https://github.com/vitaly-t/pg-promise/wiki/Learn-by-Example)
+
+Or [here!](https://github.com/vitaly-t/pg-promise/tree/master/examples)
