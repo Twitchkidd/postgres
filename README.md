@@ -62,3 +62,7 @@ Okay, well, thanks [vitaly-t for this SO post!](https://stackoverflow.com/a/3612
 This seemed to work:
 
 `postgresql://${process.env.PGADMIN}:${process.env.PGADMINPASSWORD}@localhost/${process.env.DATABASE}?user=${process.env.DBUSER}&password=${process.env.DBUSERPASSWORD}`
+
+## Further Study!
+
+Start [here!](https://github.com/vitaly-t/pg-promise/wiki/Learn-by-Example)
