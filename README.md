@@ -32,3 +32,7 @@ Oh, _sweet,_ I was able to figure out how to undo the two commands! To the Inter
 `sudo apt-get -y install postgresql`
 
 Well, shoot. Everything ran, I've got a `psql` version, and running `pg_lsclusters` shows it's online on port 5432 ... crazy ... Okay, well, [this article by Data Pilot](https://kb.objectrocket.com/postgresql/how-to-install-and-set-up-postgresql-on-a-raspberry-pi-part-2-1165) shows how to open it up to the network.
+
+## Node
+
+Let's see if I can connect to it from Node now.
